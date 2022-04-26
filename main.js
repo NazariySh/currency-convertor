@@ -3,13 +3,13 @@ let inp1 = document.querySelector('#inp1');
 let inp2 = document.querySelector('#inp2');
 let select1 = document.querySelector('#select1');
 let select2 = document.querySelector('#select2');
-let API = 'http://api.exchangeratesapi.io/v1/latest?access_key=af6ef5865c70a678c323370fceccd785';
+
 
 let info = document.querySelector('#info');
 let convert = document.querySelector('#convert')
 let html = ' ';
 function currency(){
-fetch(API)
+fetch("http://api.exchangeratesapi.io/v1/latest?access_key=af6ef5865c70a678c323370fceccd785")
 .then(res=>{
    return(res.json()) })
 .then(data =>{
