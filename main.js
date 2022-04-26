@@ -37,6 +37,6 @@ async function currency(){
     inp2.value = (inp1.value * rates[select2.value] / rates[select1.value]).toFixed(3);
     inp1.value = (inp2.value * rates[select1.value] / rates[select2.value]).toFixed(3);
   }
-   info.innerHTML ='Last updated: ' + data.time_last_update_utc
+   info.innerHTML ='Last updated: ' + data.time_last_update_utc;
 }
 currency();
